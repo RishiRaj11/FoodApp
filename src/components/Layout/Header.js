@@ -7,15 +7,15 @@ const Header = (props) => {
         <Fragment>
             <header className={classes.header}>
                 <h1>Food App</h1>
-                <HeaderCart></HeaderCart>
+                <HeaderCart onClick={props.onShowCart}></HeaderCart>
+               
             </header>
             <div className={classes.main_image}> 
                 <img src={mealImage} alt="Delicious Food!" />
             </div>
-        </Fragment>
-    );
-
-};
+        </Fragment> 
+    )
+}
 export default Header;
 /*
  ---> className={['classes.main-image']} here - in name so it cant be used like classes.main-image
